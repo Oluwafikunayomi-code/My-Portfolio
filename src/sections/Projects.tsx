@@ -4,6 +4,7 @@ import virtualR from "@/assets/images/virtual-R.jpg";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from "@/assets/images/grain.jpg";
+import { SectionHeader } from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -47,14 +48,7 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   return <section className="pb-16 lg:py-24" >
     <div className="container">
-      <div className="flex justify-center">
-        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
-          Real-world Results
-        </p>
-      </div>
-      <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
-      <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">See how i transformed concepts into engaging digital experiences.
-      </p>
+      <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how i transformed concepts into engaging digital experiences." />
       <div className="flex flex-col md:mt-20 mt-10 gap-20">
         {portfolioProjects.map(project => (
           <div key={project.title} className="bg-gray-800 rounded-3xl relative z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none">
