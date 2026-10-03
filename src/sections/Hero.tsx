@@ -53,7 +53,7 @@ export const HeroSection = () => {
         <div className='flex flex-col items-center'>
           <Image 
           src={myImage}
-          className='size-[110px]' 
+          className='size-[110px] mb-2 rounded-md' 
           alt="Profile picture" />
           <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
             <div className='bg-green-500 size-2.5 rounded-full'></div>
