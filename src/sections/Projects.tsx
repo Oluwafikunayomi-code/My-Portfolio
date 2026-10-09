@@ -46,7 +46,7 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
-  return <section className="pb-16 lg:py-24" >
+  return <section className="mt-5 pb-16 lg:py-24" >
     <div className="container">
       <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how i transformed concepts into engaging digital experiences." />
       <div className="flex flex-col md:mt-20 mt-10 gap-20">
