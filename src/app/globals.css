@@ -34,3 +34,15 @@
         @apply lg:max-w-5xl;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home,
+#projects,
+#testimonials,
+#about,
+#contact {
+    scroll-margin-top: 100px; /* Adjust this value based on your header height */
+}
