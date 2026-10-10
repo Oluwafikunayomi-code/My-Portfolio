@@ -1,5 +1,5 @@
 "use client"
-import { Menu, X } from "lucide-react";
+/* import { Menu, X } from "lucide-react"; */
 import { useEffect, useState } from "react";
 
 export const Header = () => {
