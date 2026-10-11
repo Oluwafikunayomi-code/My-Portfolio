@@ -16,13 +16,13 @@ useEffect(() => {
   ];
 
   const observer = new IntersectionObserver((entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-    if (visible.length > 0) {
-      setActiveSection(visible[0].target.id);
+    const visibleSections = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+    if (visibleSections.length > 0)
+    {setActiveSection(visibleSections[0].target.id);
     }
   },
   {
-    rootMargin: "-15% 0px -65% 0px",
+    rootMargin: "-20% 0px -70% 0px",
     threshold: 0,
   }
 );
@@ -46,10 +46,10 @@ return () => observer.disconnect();
       <a href="#testimonials" onClick={() => setActiveSection("testimonials")} className={`nav-item ${
         activeSection === "testimonials" ? "bg-white !text-slate-900" : ""
       }`}>Testimonials</a>
-      <a href="#about" className={`nav-item ${
+      <a href="#about" onClick={() => setActiveSection("about")} className={`nav-item ${
         activeSection === "about" ? "bg-white !text-slate-900" : ""
       }`}>About</a>
-      <a href="#contact" className={`nav-item ${
+      <a href="#contact" onClick={() => setActiveSection("contact")} className={`nav-item ${
         activeSection === "contact" ? "bg-white !text-slate-900" : ""
       }`}>Contact</a>
     </nav>

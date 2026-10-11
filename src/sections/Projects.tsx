@@ -25,8 +25,7 @@ const portfolioProjects = [
     year: "2026",
     title: "Virtual R game landing page",
     results: [
-      { title: "Enhanced user experience" },
-      { title: "Enhanced user interface" },
+      { title: "Practicing Tailwind-css" },
     ],
     link: "https://virtualr-main-nu.vercel.app",
     image: virtualR,
